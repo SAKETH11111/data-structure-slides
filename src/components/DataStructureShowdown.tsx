@@ -77,7 +77,7 @@ const DataStructureShowdown = () => {
           
           <div className="mt-12 text-xl text-center">
             <p>Each operation was timed across 10,000 contacts from number.csv</p>
-            <p className="font-bold mt-2">Who will be the fastest? Let's find out!</p>
+            <p className="font-bold mt-2">Who will be the fastest?</p>
           </div>
         </div>
       )
@@ -141,8 +141,6 @@ const DataStructureShowdown = () => {
             <p className="text-lg">
               Parallel Lists simply append to the end of an array (O(1) constant time), 
               while BST must traverse down the tree to find the right spot (O(log n) time).
-              It's like the difference between tossing a card on top of a deck vs. 
-              carefully filing it in a sorted cabinet!
             </p>
           </div>
         </div>
@@ -208,7 +206,6 @@ const DataStructureShowdown = () => {
               Searching a Binary Search Tree is like using a phone book; 
               you can eliminate half the possibilities with each comparison (O(log n)). 
               Parallel Lists must check each contact one by one until it finds a match (O(n)). 
-              It's the difference between a smart search and brute force!
             </p>
           </div>
         </div>
@@ -271,10 +268,9 @@ const DataStructureShowdown = () => {
           <div className="mt-12 p-6 bg-white bg-opacity-10 rounded-lg">
             <h4 className="text-2xl font-bold mb-2">Surprise Victory:</h4>
             <p className="text-lg">
-              Theory would suggest BST should win here (O(log n) vs O(n)), but Parallel Lists 
+              Theory suggest BST should win here (O(log n) vs O(n)), but Parallel Lists 
               takes the win! This is likely due to Python's highly optimized list operations 
-              and the overhead of tree rebalancing in the BST. Sometimes simplicity wins - 
-              just find it and pop it!
+              and the overhead of tree rebalancing in the BST.
             </p>
           </div>
         </div>
@@ -370,7 +366,7 @@ const DataStructureShowdown = () => {
           <h2 className="text-4xl font-bold mb-8 text-center">THE VERDICT</h2>
           
           <div className="text-center mt-4 mb-12">
-            <span className="text-2xl">It's a split decision!</span>
+            <span className="text-2xl">It's a split decision</span>
           </div>
           
           <div className="bg-white bg-opacity-10 p-6 rounded-lg text-lg mb-8">
@@ -378,24 +374,9 @@ const DataStructureShowdown = () => {
             <ul className="list-disc list-inside mt-4 space-y-2">
               <li>If your app mostly <span className="font-bold text-green-300">adds new contacts</span>, choose <span className="font-bold text-green-300">Parallel Lists</span></li>
               <li>If your app mostly <span className="font-bold text-blue-300">searches for contacts</span>, choose <span className="font-bold text-blue-300">BST</span></li>
-              <li>Consider the <span className="font-bold">size of your dataset</span> - BST advantages increase with size</li>
-              <li>Think about <span className="font-bold">implementation complexity</span> - Parallel Lists are simpler</li>
+              <li>Consider the <span className="font-bold">size of your dataset</span>: BST advantages increase with size</li>
+              <li>Think about <span className="font-bold">implementation complexity</span>: Parallel Lists are simpler</li>
             </ul>
-          </div>
-          
-          <div className="bg-white bg-opacity-10 p-6 rounded-lg text-lg mb-8">
-            <h3 className="text-2xl font-bold mb-4">Key Takeaways:</h3>
-            <ol className="list-decimal list-inside space-y-2">
-              <li>Data structure choice should match your application's most common operations</li>
-              <li>Theoretical performance doesn't always match real-world results</li>
-              <li>The most complex structure isn't always the best choice</li>
-              <li>Different operations have vastly different performance characteristics</li>
-            </ol>
-          </div>
-          
-          <div className="text-center mt-12">
-            <h3 className="text-3xl font-bold mb-4">Thanks for watching!</h3>
-            <p className="text-xl">Address Book Performance Showdown</p>
           </div>
         </div>
       )
